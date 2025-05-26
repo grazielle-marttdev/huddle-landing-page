@@ -4,59 +4,80 @@
     }
 }
 
-@media(max-width: 1080px) {
-    header img {
-        height: 50px;
-    }
-
+@media(max-width: 1225px) {
     main .hero .title {
-        font-size: 30px;
+        font-size: 36px;
+    }
+    
+    footer .social {
+        margin-top: 25px;
     }
 }
 
-@media(max-width: 1015px) {
+@media(max-width: 1180px) {
+    body {
+        margin: 40px;
+    }
+    
     main {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        margin-top: 58px;
+    }
+
+    main .hero .title {
+        margin-top: 18px;
     }
 
     footer .social {
         justify-content: center;
-        margin-top: 42px;
+        margin-top: 70px;
     }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 750px) {
     body {
         background: hsl(257, 40%, 49%) url('../images/bg-mobile.svg') no-repeat center top;
-        margin: 38px;
+        background-size: contain;
     }
 
     header img {
-        height: 32px;
-    }
-
-    main {
-        margin-top: 50px;
+        height: 44px;
     }
 
     main .hero .title {
-        font-size: 24px;
+        font-size: 35px;
+    }
+
+    main .hero .text {
+        line-height: 28px;
+        font-weight: 400;
     }
 
     main .hero .btn-register {
-        font-size: 13px;
-        font-weight: 400;
-        width: 214px;
-        padding: 10px;
-        margin-top: 25px;
+        font-size: 15px;
     }
 
     footer .social a i {
-        font-size: 14px;
-        padding: 5px;
-        width: 26px;
-        height: 26px;
-        margin-top: 25px;
+        font-size: 15px;
+        padding: 6px;
+        width: 29px;
+        height: 29px;
+    }
+}
+
+@media(max-width: 525px) {
+    header img {
+        height: 36px;
+    }
+    
+    main .hero .title {
+        font-size: 28px;
+    }
+
+    main .hero .text {
+        font-size: 17px;
     }
 }

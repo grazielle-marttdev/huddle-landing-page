@@ -1,5 +1,5 @@
 body {
-    background: hsl(257, 40%, 49%) url('../images/bg-mobile.svg') no-repeat center center; 
+    background: hsl(257, 40%, 49%) url('../images/bg-mobile.svg') no-repeat center; 
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -7,15 +7,13 @@ body {
     margin: 50px;
 }
 
-header {
-    grid-area: header;
+header img {
+    height: 60px;
 }
 
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 460px;
-    grid-column-gap: 40px;
+    display: flex;
+    gap: 50px;
     margin-top: 72px;
 }
 
@@ -24,16 +22,21 @@ main img {
     width: 100%;
 }
 
+main .hero {
+    max-width: 878px;
+}
+
 main .hero .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
     color: #fff;
-    margin-top: 48px;
+    margin-top: 52px;
 }
 
 main .hero .text {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     line-height: 22px;
     color: #fffe;
     margin-top: 20px;
@@ -41,14 +44,14 @@ main .hero .text {
 
 main .hero .btn-register {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: hsl(257, 40%, 49%);
     padding: 12px;
-    width: 184px;
+    width: 200px;
     border: 1px solid hsl(257, 40%, 49%);
-    border-radius: 26px;
-    margin-top: 20px;
-    box-shadow: 2px 3px 2px 1px hsla(260, 40%, 27%, 0.275);
+    border-radius: 28px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px 3px hsla(260, 40%, 27%, 0.275);
     transition: 0.3s;
 }
 
@@ -56,11 +59,6 @@ main .hero .btn-register:hover {
     color: #fff;
     background-color: hsl(300, 69%, 71%);
     cursor: pointer;
-}
-
-
-footer {
-    grid-area: footer;
 }
 
 footer .social {
