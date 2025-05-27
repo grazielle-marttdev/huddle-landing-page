@@ -61,7 +61,7 @@ main .hero .btn-register:hover {
     cursor: pointer;
 }
 
-footer .social {
+footer .social ul {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
